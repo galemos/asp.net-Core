@@ -65,7 +65,7 @@ namespace asp.netCoreREST.Controllers
         [HttpGet("mean/{firstNumber}/{secondNumber}")]
         public IActionResult Mean(string firstNumber, string secondNumber) {
             if (IsNumeric(firstNumber) && IsNumeric(secondNumber)) {
-                var mean = (ConvertToDecimal(firstNumber) / ConvertToDecimal(secondNumber))/2;
+                var mean = (ConvertToDecimal(firstNumber) + ConvertToDecimal(secondNumber))/2;
                 return Ok(mean.ToString());
             }
 

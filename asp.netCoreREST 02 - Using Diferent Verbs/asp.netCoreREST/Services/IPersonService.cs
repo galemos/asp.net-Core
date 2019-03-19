@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 namespace asp.netCoreREST.Services.Implementation {
-    interface IPersonService {
+    public interface IPersonService {
         Person Create(Person person);
         Person FindById(long id);
         List<Person> FindAll();

@@ -1,45 +1,59 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using asp.netCoreREST.Model;
+using asp.netCoreREST.Services.Implementation;
 using Microsoft.AspNetCore.Mvc;
 
-namespace asp.netCoreREST.Controllers
-{
+namespace asp.netCoreREST.Controllers {
     [Route("api/[controller]")]
     [ApiController]
     public class PersonsController : ControllerBase
     {
-        // GET api/values
+        private IPersonService _personService;
+
+        public PersonsController(IPersonService personService) {
+            _personService = personService;
+        }
+
+        // GET api/persons
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public IActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(_personService.FindAll());
         }
 
-        // GET api/values/5
+        // GET api/persons/0
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public IActionResult Get(long id)
         {
-            return "value";
+            var person = _personService.FindById(id);
+            if (person == null)
+                return NotFound();
+            return Ok(person);
         }
 
-        // POST api/values
+        // POST api/persons
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post([FromBody] Person person)
         {
+            if (person == null)
+                return BadRequest();
+            return new ObjectResult(_personService.Create(person));
         }
 
-        // PUT api/values/5
+        // PUT api/persons/0
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IActionResult Put([FromBody] Person person)
         {
+            if (person == null)
+                return BadRequest();
+            return new ObjectResult(_personService.Update(person));
         }
 
-        // DELETE api/values/5
+        // DELETE api/persons/0
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(long id)
         {
+            _personService.Delete(id);
+            return NoContent();
         }
     }
 }
