@@ -36,7 +36,7 @@ namespace asp.netCoreREST.Controllers
         }
 
         // GET api/calculator/mul/0/0
-        [HttpGet("sub/{firstNumber}/{secondNumber}")]
+        [HttpGet("mult/{firstNumber}/{secondNumber}")]
         public IActionResult Mul(string firstNumber, string secondNumber)
         {
             if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
@@ -49,13 +49,35 @@ namespace asp.netCoreREST.Controllers
         }
 
         // GET api/calculator/div/0/0
-        [HttpGet("sub/{firstNumber}/{secondNumber}")]
+        [HttpGet("div/{firstNumber}/{secondNumber}")]
         public IActionResult Div(string firstNumber, string secondNumber)
         {
             if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
             {
                 var div = ConvertToDecimal(firstNumber) / ConvertToDecimal(secondNumber);
                 return Ok(div.ToString());
+            }
+
+            return BadRequest("Invalid Input");
+        }
+
+        // GET api/calculator/div/0/0
+        [HttpGet("mean/{firstNumber}/{secondNumber}")]
+        public IActionResult Mean(string firstNumber, string secondNumber) {
+            if (IsNumeric(firstNumber) && IsNumeric(secondNumber)) {
+                var mean = (ConvertToDecimal(firstNumber) / ConvertToDecimal(secondNumber))/2;
+                return Ok(mean.ToString());
+            }
+
+            return BadRequest("Invalid Input");
+        }
+
+        // GET api/calculator/div/0/0
+        [HttpGet("sqrt/{number}")]
+        public IActionResult Square(string number) {
+            if (IsNumeric(number)) {
+                var sqrt = Math.Sqrt((double)ConvertToDecimal(number));
+                return Ok(sqrt.ToString());
             }
 
             return BadRequest("Invalid Input");
