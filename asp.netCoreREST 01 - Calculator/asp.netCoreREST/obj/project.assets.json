@@ -12096,11 +12096,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\Documents\\Projetos\\asp.net-Core\\asp.netCoreREST\\asp.netCoreREST\\asp.netCoreREST.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\Documents\\Projetos\\asp.net-Core\\asp.netCoreREST 01 - Calculator\\asp.netCoreREST\\asp.netCoreREST.csproj",
       "projectName": "asp.netCoreREST",
-      "projectPath": "C:\\Users\\gabri\\Documents\\Projetos\\asp.net-Core\\asp.netCoreREST\\asp.netCoreREST\\asp.netCoreREST.csproj",
+      "projectPath": "C:\\Users\\gabri\\Documents\\Projetos\\asp.net-Core\\asp.netCoreREST 01 - Calculator\\asp.netCoreREST\\asp.netCoreREST.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\Documents\\Projetos\\asp.net-Core\\asp.netCoreREST\\asp.netCoreREST\\obj\\",
+      "outputPath": "C:\\Users\\gabri\\Documents\\Projetos\\asp.net-Core\\asp.netCoreREST 01 - Calculator\\asp.netCoreREST\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

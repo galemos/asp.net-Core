@@ -12,3 +12,17 @@ C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST\asp.netCoreREST\o
 C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST\asp.netCoreREST\obj\Debug\netcoreapp2.2\asp.netCoreREST.RazorTargetAssemblyInfo.cache
 C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST\asp.netCoreREST\obj\Debug\netcoreapp2.2\asp.netCoreREST.dll
 C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST\asp.netCoreREST\obj\Debug\netcoreapp2.2\asp.netCoreREST.pdb
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\obj\Debug\netcoreapp2.2\asp.netCoreREST.csprojAssemblyReference.cache
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\obj\Debug\netcoreapp2.2\asp.netCoreREST.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\obj\Debug\netcoreapp2.2\asp.netCoreREST.RazorAssemblyInfo.cache
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\obj\Debug\netcoreapp2.2\asp.netCoreREST.RazorAssemblyInfo.cs
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\obj\Debug\netcoreapp2.2\asp.netCoreREST.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\obj\Debug\netcoreapp2.2\asp.netCoreREST.AssemblyInfo.cs
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\obj\Debug\netcoreapp2.2\asp.netCoreREST.dll
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\obj\Debug\netcoreapp2.2\asp.netCoreREST.pdb
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\bin\Debug\netcoreapp2.2\asp.netCoreREST.deps.json
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\bin\Debug\netcoreapp2.2\asp.netCoreREST.runtimeconfig.json
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\bin\Debug\netcoreapp2.2\asp.netCoreREST.runtimeconfig.dev.json
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\bin\Debug\netcoreapp2.2\asp.netCoreREST.dll
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\bin\Debug\netcoreapp2.2\asp.netCoreREST.pdb
+C:\Users\gabri\Documents\Projetos\asp.net-Core\asp.netCoreREST 01 - Calculator\asp.netCoreREST\obj\Debug\netcoreapp2.2\asp.netCoreREST.RazorTargetAssemblyInfo.cache
