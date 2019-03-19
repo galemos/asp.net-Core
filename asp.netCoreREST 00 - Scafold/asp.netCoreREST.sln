@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp.netCoreREST", "asp.netCoreREST\asp.netCoreREST.csproj", "{96C3B03A-DE72-43E7-AC1C-DA0815E6F5D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96C3B03A-DE72-43E7-AC1C-DA0815E6F5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96C3B03A-DE72-43E7-AC1C-DA0815E6F5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96C3B03A-DE72-43E7-AC1C-DA0815E6F5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96C3B03A-DE72-43E7-AC1C-DA0815E6F5D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {381CF845-F999-45DD-B089-2B71D5A9B49E}
+	EndGlobalSection
+EndGlobal
