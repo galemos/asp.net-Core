@@ -5,25 +5,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 
-namespace asp.netCoreREST.Services.Implementation
+namespace asp.netCoreREST.Repository.Implementation
 {
-    public class PersonServiceImplementation : IPersonService {
+    public class PersonRepositoryImpl : IPersonRepository {
 
         private MySQLContext _context;
 
-        public PersonServiceImplementation(MySQLContext context)
-        {
+        public PersonRepositoryImpl(MySQLContext context) {
             _context = context;
         }
 
         public Person Create(Person person) {
-            try
-            {
+            try {
                 _context.Add(person);
                 _context.SaveChanges();
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex) {
                 throw ex;
             }
             return person;
@@ -33,46 +30,41 @@ namespace asp.netCoreREST.Services.Implementation
             return _context.Persons.SingleOrDefault(p => p.Id.Equals(id));
         }
 
-        public List<Person> FindAll() {            
+        public List<Person> FindAll() {
             return _context.Persons.ToList();
         }
 
         public Person Update(Person person) {
-            try
-            {
+            try {
                 if (!Exist(person.Id))
-                    return new Person();
+                    return null;
 
                 var result = _context.Persons.SingleOrDefault(p => p.Id.Equals(person.Id));
 
                 _context.Entry(result).CurrentValues.SetValues(person);
                 _context.SaveChanges();
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex) {
                 throw ex;
             }
             return person;
         }
 
-        private bool Exist(long id)
-        {
-            return _context.Persons.Any(p => p.Id.Equals(id));
-        }
-
         public void Delete(long id) {
-            
-            try
-            {
+
+            try {
                 var result = _context.Persons.SingleOrDefault(p => p.Id.Equals(id));
                 if (result != null)
                     _context.Persons.Remove(result);
                 _context.SaveChanges();
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex) {
                 throw ex;
             }
+        }
+
+        public bool Exist(long id) {
+            return _context.Persons.Any(p => p.Id.Equals(id));
         }
     }
 }

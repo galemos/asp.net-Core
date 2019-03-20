@@ -1,8 +1,8 @@
 ﻿using asp.netCoreREST.Model;
 using System.Collections.Generic;
 
-namespace asp.netCoreREST.Services.Implementation {
-    public interface IPersonService {
+namespace asp.netCoreREST.Business {
+    public interface IPersonBusiness {
         Person Create(Person person);
         Person FindById(long id);
         List<Person> FindAll();
