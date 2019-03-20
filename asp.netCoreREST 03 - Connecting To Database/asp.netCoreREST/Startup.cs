@@ -26,6 +26,8 @@ namespace asp.netCoreREST
 
             //Add Framework services
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddApiVersioning();
             
             //Dependency Injection
             services.AddScoped<IPersonService, PersonServiceImplementation>();

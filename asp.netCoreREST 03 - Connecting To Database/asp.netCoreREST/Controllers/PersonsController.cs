@@ -3,8 +3,10 @@ using asp.netCoreREST.Services.Implementation;
 using Microsoft.AspNetCore.Mvc;
 
 namespace asp.netCoreREST.Controllers {
-    [Route("api/[controller]")]
+
+    [ApiVersion("1")]
     [ApiController]
+    [Route("api/[controller]/v{version:apiVersion}")]
     public class PersonsController : ControllerBase
     {
         private IPersonService _personService;
